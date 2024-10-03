@@ -17,8 +17,8 @@ Method #1 can be quickly described using a sequence of the following commands:
 ```
 git clone --depth 1 https://github.com/coredns/coredns.git
 cd coredns
-go get github.com/v-byte-cpu/coredns-https
-echo "https:github.com/v-byte-cpu/coredns-https" >> plugin.cfg
+go get github.com/xinbenlv/coredns-https
+echo "https:github.com/xinbenlv/coredns-https" >> plugin.cfg
 go generate
 go mod tidy -compat=1.17
 go build

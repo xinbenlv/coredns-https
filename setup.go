@@ -34,8 +34,7 @@ func setup(c *caddy.Controller) error {
 
 func setupDNSClient(conf *httpsConfig) dnsClient {
 	tr := &http.Transport{
-		TLSClientConfig:   conf.tlsConfig,
-		ForceAttemptHTTP2: true,
+		// TODO: removed TLSClientConfig: conf.tlsConfig,
 	}
 	httpClient := &http.Client{
 		Transport: tr,
